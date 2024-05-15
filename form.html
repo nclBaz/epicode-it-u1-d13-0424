@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #ebebeb;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      main {
+        margin-top: 3rem;
+      }
+
+      .container {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: white;
+        box-shadow: 0 3px 6px rgb(0 0 0 / 10%);
+        padding: 1rem;
+      }
+
+      .input-group {
+        margin-block-end: 0.5rem;
+      }
+
+      .input-group input,
+      .input-group textarea {
+        width: 100%;
+        border: 2px solid #c6c6c6;
+        padding-block: 0.25rem;
+        border-radius: 4px;
+      }
+
+      .card {
+        display: inline-block;
+        width: 25%;
+        padding: 1rem;
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h1>FORMS</h1>
+        <form id="newuser-form">
+          <div class="input-group">
+            <label for="name">Nome</label>
+            <input id="name" type="text" placeholder="Inserisci il tuo nome" maxlength="20" />
+          </div>
+          <div class="input-group">
+            <label for="surname">Cognome</label>
+            <input id="surname" type="text" placeholder="Inserisci il tuo cognome" maxlength="20" />
+          </div>
+          <div class="input-group">
+            <label for="email">Email</label>
+            <input id="email" type="email" placeholder="Inserisci la tua email" />
+          </div>
+          <div class="input-group">
+            <label for="age">Età</label>
+            <input id="age" type="number" placeholder="Inserisci la tua età" min="18" max="110" />
+          </div>
+          <div class="input-group">
+            <label for="bio">Bio</label>
+            <input id="bio" type="text" placeholder="Inserisci una breve descrizione" />
+          </div>
+          <button>Invia</button>
+        </form>
+      </div>
+      <section id="rubrica"></section>
+    </main>
+    <script src="./assets/js/form.js"></script>
+  </body>
+</html>
