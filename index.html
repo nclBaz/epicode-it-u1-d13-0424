@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      main {
+        width: 50%;
+        margin: 0 auto;
+        text-align: center;
+      }
+      .card {
+        width: 25%;
+        margin: 0 auto;
+        border: 1px solid lightgrey;
+        border-radius: 0.5em;
+        margin-top: 1rem;
+        padding: 1rem;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>DOM EVENTS</h1>
+      <!-- Gli eventi del DOM sono a nostra disposizione per poter eseguire determinato codice, QUANDO l'utente effettuerà una determinata azione. Ad esempio un click su un elemento, scrivere dentro un campo di testo, scrollare la pagina, spostarsi con il mouse su un elemento e così via...Non si parla prettamente di azioni dell'utente perché ad esempio si può anche reagire all'evento "pagina caricata interamente" e così via... -->
+      <div>
+        <h2>I 3 metodi per applicare eventi agli elementi del DOM</h2>
+
+        <h3>1. Applicazione diretta sull'elemento HTML come suo attributo</h3>
+        <button id="first-btn" onclick="handleButtonClick(event)">Metodo 1</button>
+
+        <h3>2. Applicazione in JS come attributo sul nodo (usando.onclick)</h3>
+        <button id="second-btn">Metodo 2</button>
+
+        <h3>3. Applicazione in JS sfruttando l'event listener</h3>
+        <button id="third-btn">Metodo 3</button>
+      </div>
+      <div class="card">
+        <h3>Card</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, vel aliquam exercitationem atque, non consequatur reiciendis beatae laborum
+          dolores labore asperiores deleniti veritatis facere suscipit, numquam nobis repellendus provident quae?
+        </p>
+        <button id="card-btn">Card Button</button>
+      </div>
+      <div class="card">
+        <h3>Card 2</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, vel aliquam exercitationem atque, non consequatur reiciendis beatae laborum
+          dolores labore asperiores deleniti veritatis facere suscipit, numquam nobis repellendus provident quae?
+        </p>
+        <button id="card-btn">Card Button</button>
+      </div>
+      <div class="card">
+        <h3>Card 3</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex, vel aliquam exercitationem atque, non consequatur reiciendis beatae laborum
+          dolores labore asperiores deleniti veritatis facere suscipit, numquam nobis repellendus provident quae?
+        </p>
+        <button id="card-btn">Card Button</button>
+      </div>
+    </main>
+    <script src="./assets/js/events.js"></script>
+  </body>
+</html>
