@@ -44,6 +44,21 @@ cards.forEach(card => {
     console.log("Target:", event.target)
     console.log("Current Target:", event.currentTarget)
   })
+
+  card.addEventListener("mouseenter", function (event) {
+    const h1 = document.querySelector("h1")
+    h1.style.color = "orange"
+  })
+
+  card.addEventListener("mouseleave", function (event) {
+    const h1 = document.querySelector("h1")
+    h1.style.color = "green"
+  })
 })
 
 // const cards2 = document.getElementsByClassName("card")
+
+window.addEventListener("scroll", function () {
+  console.log("hai scrollato")
+  console.log(window.scrollY)
+})
